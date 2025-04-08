@@ -33,8 +33,8 @@ export function NavbarDashboard()  {
                     </SheetContent>
                     </Sheet>
                 </div>
-                <a href="/love-cars"><Heart className={`h-5 w-5 ${lovedItems.length > 0 && "fill-black"}`} strokeWidth={1}/></a>
-                <div className="flex items-center gap-4">
+                <Link href="/love-cars" className="hidden lg:block"><Heart className={`h-5 w-5 ${lovedItems.length > 0 && "fill-black"}`} strokeWidth={1}/></Link>
+                <div className="hidden lg:flex items-center gap-4">
                     {isSignedIn ? (
                         <UserButton />
                     ) : (

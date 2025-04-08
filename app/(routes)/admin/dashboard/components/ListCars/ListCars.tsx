@@ -1,4 +1,5 @@
-import { CardCard } from "@/components/CardCar";
+
+import { CardCard } from "../CardCar";
 import { ListCarsProps } from "./ListCars.type";
 
 export function ListCars(props: ListCarsProps) {

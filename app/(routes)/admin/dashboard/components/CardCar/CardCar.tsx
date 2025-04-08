@@ -1,6 +1,6 @@
 "use client"
 
-import { Button } from "../ui/button";
+import { Button } from "../../../../../../components/ui/button";
 import { toast } from "sonner"
 import { Gauge, Trash, Users, FuelIcon, Calendar, Car } from "lucide-react";
 import Image from "next/image";
