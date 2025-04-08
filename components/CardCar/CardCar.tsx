@@ -2,7 +2,7 @@
 
 import { Button } from "../ui/button";
 import { toast } from "sonner"
-import { Fuel, Gauge, Gem, Trash, Upload, Users, Wrench, PersonStanding, FuelIcon, Calendar, Car } from "lucide-react";
+import { Gauge, Trash, Users, FuelIcon, Calendar, Car } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 

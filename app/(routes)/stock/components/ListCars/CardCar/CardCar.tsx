@@ -2,7 +2,6 @@
 
 import { Gauge, Users, FuelIcon, Calendar, Car, Heart } from "lucide-react";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import { CardCarProps } from "./CardCar.type";
 import { useLovedCars } from "@/hooks/use-loved-cars";
 
