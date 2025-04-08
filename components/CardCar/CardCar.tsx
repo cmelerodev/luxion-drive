@@ -21,6 +21,7 @@ export function CardCard(props: CardCarProps) {
             toast.error("Car deleted")
             router.refresh()
         } catch (error) {
+            console.error("Error deleting car:", error);
             toast.error("Something went wrong")
         }
     }
