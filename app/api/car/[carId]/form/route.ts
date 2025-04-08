@@ -1,7 +1,7 @@
 import { db } from "@/lib/db"
 import { NextResponse } from "next/server"
 
-export async function PATCH(req: Request, {params}: {params: {carId: string}}) {
+export async function PATCH(req: Request, { params }: {params: { carId: string }}) {
     
     try {
         const {carId} = params
