@@ -1,4 +1,4 @@
-import { Calendar, Wrench, Car, Contact, Heart, Phone } from "lucide-react";
+import { Wrench, Car, Phone } from "lucide-react";
 
 export const dataGeneralSidebar = [
     {
@@ -14,7 +14,7 @@ export const dataGeneralSidebar = [
     {
         icon: Phone,
         label: "Contactar",
-        href: "/loved-cars"
+        href: "/contact"
     }
 ]
 

@@ -1,4 +1,3 @@
-import { Badge } from "@/components/ui/badge"
 import { MapPin } from "lucide-react"
 
 export default function ServicePage() {

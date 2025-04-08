@@ -1,19 +1,14 @@
 "use client"
 
-import { toast } from "sonner"
-import { Fuel, Gauge, Gem, Trash, Upload, Users, Wrench, PersonStanding, FuelIcon, Calendar, Car, Heart } from "lucide-react";
+import { Gauge, Users, FuelIcon, Calendar, Car, Heart } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import axios from "axios";
-import { Button } from "@/components/ui/button";
 import { CardCarProps } from "./CardCar.type";
 import { useLovedCars } from "@/hooks/use-loved-cars";
 
 export function CardCard(props: CardCarProps) {
     const { car } = props;
     const { addLovedItem, lovedItems, removeLovedItem } = useLovedCars();
-
-    const router = useRouter()
 
     const likedCar = lovedItems.some((item) => item.id === car.id)
 

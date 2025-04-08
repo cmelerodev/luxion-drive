@@ -3,9 +3,6 @@
 import {
     Sheet,
     SheetContent,
-    SheetDescription,
-    SheetHeader,
-    SheetTitle,
     SheetTrigger,
   } from "@/components/ui/sheet"
 import { Heart, Menu } from "lucide-react"
@@ -13,6 +10,7 @@ import { SidebarRoutes } from "../SidebarRoutes/SidebarRoutes"
 import { SignInButton, SignUpButton, useAuth, UserButton } from "@clerk/nextjs"
 import { useLovedCars } from "@/hooks/use-loved-cars"
 import { Button } from "../ui/button"
+import Image from "next/image"
   
 
 export function NavbarDashboard()  {
@@ -21,7 +19,7 @@ export function NavbarDashboard()  {
 
     return (
         <nav className="flex items-center justify-between w-full h-20 px-2 border-b gap-x-4 md:px-6 bg-background">
-            <a href="/"><img className="w-[120px]" src="/logo-luxion-drive.png" alt="logo Luxion Drive"></img></a>
+            <a href="/"><Image className="w-[120px]" src="/logo-luxion-drive.png" alt="logo Luxion Drive"></Image></a>
             
             <SidebarRoutes />
         

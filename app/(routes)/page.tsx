@@ -1,7 +1,7 @@
 import { FeaturedCard } from "@/components/FeaturedCard";
 import { Reveal } from "@/components/Reveal";
 import { Button } from "@/components/ui/button";
-import { FileText, Link, SearchCheck, Smile } from "lucide-react";
+import { FileText, SearchCheck, Smile } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {

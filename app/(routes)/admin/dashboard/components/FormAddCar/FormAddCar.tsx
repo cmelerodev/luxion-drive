@@ -10,7 +10,6 @@ import { Button } from "@/components/ui/button"
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -28,7 +27,6 @@ import { formSchema } from "./FormAddCar.form"
 import { UploadButton } from "@/utils/uploadthing"
 import { useState } from "react"
 import { FormAddCarProps } from "./FormAddCar.types"
-import { title } from "process"
 import { useRouter } from "next/navigation"
 
 export function FormAddCar(props: FormAddCarProps) {

@@ -1,4 +1,3 @@
-import { auth } from "@clerk/nextjs/server"
 import { ButtonAddCar } from "./components/ButtonAddCar"
 import { ListCars } from "./components/ListCars"
 import { db } from "@/lib/db"
@@ -6,9 +5,6 @@ import { db } from "@/lib/db"
 export default async function DashboardPage() {
 
     const car = await db.car.findMany();
-
-    console.log(car)
-    console.log("Hola")
 
     return (
         

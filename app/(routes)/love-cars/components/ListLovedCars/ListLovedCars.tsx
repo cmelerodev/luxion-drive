@@ -5,7 +5,7 @@ import { Car } from "@prisma/client"
 import { Calendar, CarFront, FuelIcon, Gauge, Heart, Users } from "lucide-react"
 import Image from "next/image"
 export function ListLovedCars () {
-    const {addLovedItem, lovedItems, removeLovedItem} =  useLovedCars()
+    const {lovedItems, removeLovedItem} =  useLovedCars()
     return <>
         {lovedItems.length === 0 ? (
             <div className="flex w-full justify-center items-center">
@@ -14,7 +14,7 @@ export function ListLovedCars () {
         ): (
             <div className="grid grid-cols-2 gap-6 my-4 lg:grid-cols-4">
                 {lovedItems.map((car: Car) => {
-                    const {model, brand, photo, fuel_type, km, year, cv, color, plazas, price, puertas, id, description} = car
+                    const {model, photo, fuel_type, km, year, cv, plazas, price, id, description} = car
 
                     return (
                         <div className="relative p-1 rounded-lg shadow-md hover:shadow-lg" key={id}>

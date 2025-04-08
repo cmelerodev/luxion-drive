@@ -10,7 +10,6 @@ import { Button } from "@/components/ui/button"
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -27,10 +26,8 @@ import { Input } from "@/components/ui/input"
 import { formSchema } from "./FormEditCar.form"
 import { UploadButton } from "@/utils/uploadthing"
 import { useState } from "react"
-import { title } from "process"
 import { useRouter } from "next/navigation"
 import { FormEditCarProps } from "./FormEditCar.types";
-import { CardCard } from "../CardCar"
 
 
 

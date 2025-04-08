@@ -6,11 +6,6 @@ import { Toaster } from "@/components/ui/sonner"
 
 import {
   ClerkProvider,
-  SignInButton,
-  SignUpButton,
-  SignedIn,
-  SignedOut,
-  UserButton,
 } from '@clerk/nextjs'
 import { NavbarDashboard } from "../components/NavbarDashboard";
 
