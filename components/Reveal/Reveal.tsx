@@ -38,11 +38,12 @@ export function Reveal(props: RevealProps) {
     const slideControls = useAnimation()
 
     useEffect(() => {
-        if(isInView) {
+        if (isInView) {
             mainControls.start("visible")
             slideControls.start("visible")
         }
-    }, [isInView])
+    }, [isInView, mainControls, slideControls]) // Añadir mainControls y slideControls como dependencias
+
     return (
         <div ref={ref}>
             <motion.div
