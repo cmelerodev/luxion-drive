@@ -64,6 +64,7 @@ export function FormEditCar(props: FormEditCarProps) {
             toast("Car edited")
             router.refresh();
         } catch (error) {
+            console.error("Error editing car:", error);
             toast.error("Something went wrong")
         }
     }
