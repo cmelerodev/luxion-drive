@@ -1,10 +1,13 @@
 import { db } from "@/lib/db"
 import { NextResponse } from "next/server"
 
-export async function DELETE(req: Request, {params}: {params: {carId: string}}) {
+export async function DELETE(
+    req: Request,
+    {params}: {params: Promise<{carId: string}>}
+) {
 
     try {
-        const {carId} = params;
+        const {carId} = await params;
 
         const deletedCar = await db.car.delete({
             where: {
