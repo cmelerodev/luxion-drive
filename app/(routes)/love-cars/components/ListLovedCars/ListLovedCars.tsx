@@ -8,7 +8,7 @@ export function ListLovedCars () {
     const {lovedItems, removeLovedItem} =  useLovedCars()
     return <>
         {lovedItems.length === 0 ? (
-            <div className="flex w-full justify-center items-center">
+            <div className="flex min-h-60 w-full justify-center items-center">
                 <h2 className="">Lista de coches favoritos vacía</h2>
             </div>
         ): (
@@ -18,7 +18,9 @@ export function ListLovedCars () {
 
                     return (
                         <div className="relative p-1 rounded-lg shadow-md hover:shadow-lg" key={id}>
-                            <Image src={photo} alt={model} width={400} height={600} className="rounded-lg"/>
+                            <div className="flex justify-center">
+                                <Image src={photo} alt={model} width={250} height={250} className="rounded-lg"/>
+                            </div>
                             <div className="relative p-3">
                                 <div className="flex flex-col mb-3 gap-x-4">
                                     <p className="text-xl min-h-16 lg:min-h-fit">{model}</p>
@@ -29,7 +31,7 @@ export function ListLovedCars () {
                                     <p>{price}€</p>
                                 </div>
 
-                                <div className="grid md:grid-cols-2 gap-x-4">
+                                <div className="grid grid-cols-2 gap-x-4">
                                     <p className="flex items-center">
                                         <Users className="h-4 w-4 mr-2" strokeWidth={1} />
                                         {plazas}
@@ -51,15 +53,14 @@ export function ListLovedCars () {
                                         <span>{km} km</span>
                                     </p>
                                 </div>
-                                <div className="absolute top-2 right-2">
-                                    <Heart
-                                        className="cursor-pointer fill-black"
-                                        onClick={() => removeLovedItem(car.id)}
-                                        strokeWidth={1}
-                                    />
-                                </div>
                             </div>
-                            
+                            <div className="absolute top-6 right-6">
+                                <Heart
+                                    className="cursor-pointer hover:scale-110 text-red-500 fill-red-500"
+                                    onClick={() => removeLovedItem(car.id)}
+                                    strokeWidth={1}
+                                />
+                            </div>
                         </div>
                     );
                 })}
