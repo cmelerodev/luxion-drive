@@ -27,7 +27,7 @@ export function ListLovedCars () {
                                     <div className="flex justify-between items-center">
                                     <p className="text-xl">{model}</p>
                                     <Badge className="bg-gradient-to-tr from-slate-900 to-gray-600 font-bold">
-                                        {Number(car.price).toLocaleString('es-ES')} €
+                                        {Number(price).toLocaleString('es-ES')} €
                                     </Badge>
                                     </div>
                                     <p className="text-sm text-slate-500">{description}</p>
