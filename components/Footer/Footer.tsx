@@ -19,7 +19,7 @@ export function Footer() {
                             <Link href="/services" className="hover:underline me-4 md:me-6">Servicios</Link>
                         </li>
                         <li>
-                            <Link href="#" className="hover:underline me-4 md:me-6">Contactar</Link>
+                            <Link href="/contact" className="hover:underline me-4 md:me-6">Contactar</Link>
                         </li>
                     </ul>
                 </div>

@@ -23,7 +23,6 @@ export default function ServicePage() {
 
             <Section>
                 <CarImage />
-                
             </Section>
 
             <Section>

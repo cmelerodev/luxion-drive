@@ -18,28 +18,28 @@ export function CarImage() {
                         <h4 className="font-medium text-lg mb-4">Ventajas de nuestros servicios</h4>
                         <ul className="space-y-3">
                             <li className="flex items-center gap-2">
-                                <CircleCheck className="w-4 h-4 text-green-500"/>
+                                <CircleCheck className="w-4 h-4 text-green-500 flex-shrink-0"/>
                                 <span>Financiación flexible adaptada a tus necesidades.</span>
                             </li>
                             <li className="flex items-center gap-2">
-                                <CircleCheck className="w-4 h-4 text-green-500"/>
+                                <CircleCheck className="w-4 h-4 text-green-500 flex-shrink-0"/>
                                 <span>Entrega a domicilio para tu comodidad.</span>
                             </li>
                             <li className="flex items-center gap-2">
-                                <CircleCheck className="w-4 h-4 text-green-500"/>
+                                <CircleCheck className="w-4 h-4 text-green-500 flex-shrink-0"/>
                                 <span>Garantía completa para la tranquilidad de tu compra.</span>
                             </li>
                             <li className="flex items-center gap-2">
-                                <CircleCheck className="w-4 h-4 text-green-500"/>
+                                <CircleCheck className="w-4 h-4 text-green-500 flex-shrink-0"/>
                                 <span>Vehículos certificados con historial completo.</span>
                             </li>
                             <li className="flex items-center gap-2">
-                                <CircleCheck className="w-4 h-4 text-green-500"/>
+                                <CircleCheck className="w-4 h-4 text-green-500 flex-shrink-0"/>
                                 <span>Servicio de detailing para mantener tu coche en su mejor estado.</span>
                             </li>
                         </ul>
                     </div>
-                    <Link href="/stock"><Button>Ver todos los coches <ArrowRight className="w-5 h-5 ml-2"/></Button></Link>
+                    <Link href="/stock" className="w-fit"><Button>Ver todos los coches <ArrowRight className="w-5 h-5 ml-2"/></Button></Link>
                 </div>
             </div>
         </div>
