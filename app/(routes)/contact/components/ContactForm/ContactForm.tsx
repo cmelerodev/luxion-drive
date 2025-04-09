@@ -11,7 +11,7 @@ export function ContactForm() {
                 <Input type="text" placeholder="Nombre" />
                 <Input type="email" placeholder="Email *" required/>
             </div>
-            <Input type="number" placeholder="Teléfono" />
+            <Input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Teléfono" />
             <Textarea placeholder="Mensaje *"className="h-30" required/>
 
             <Button>Enviar <Send className="w-5 h5 ml-2" strokeWidth={1} /></Button>
