@@ -26,7 +26,7 @@ export function SidebarRoutes({ className = "" }: { className?: string }) {
             )}
 
             <a href="/love-cars" className="flex lg:hidden gap-x-2 mt-2 text-slate-700 text-sm items-center hover:bg-slate-300/20 p-2 rounded-lg cursor-pointer">
-                <Heart strokeWidth={1} className={`h-5 w-5 ${lovedItems.length > 0 && "fill-black"}`}/>
+                <Heart strokeWidth={1} className={`h-5 w-5 ${lovedItems.length > 0 && "text-red-500 fill-red-500"}`}/>
                 Loved cars
             </a>
 

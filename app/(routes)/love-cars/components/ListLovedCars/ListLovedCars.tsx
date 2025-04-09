@@ -1,5 +1,6 @@
 "use client"
 
+import { Badge } from "@/components/ui/badge"
 import { useLovedCars } from "@/hooks/use-loved-cars"
 import { Car } from "@prisma/client"
 import { Calendar, CarFront, FuelIcon, Gauge, Heart, Users } from "lucide-react"
@@ -23,7 +24,12 @@ export function ListLovedCars () {
                             </div>
                             <div className="relative p-3">
                                 <div className="flex flex-col mb-3 gap-x-4">
-                                    <p className="text-xl min-h-16 lg:min-h-fit">{model}</p>
+                                    <div className="flex justify-between items-center">
+                                    <p className="text-xl">{model}</p>
+                                    <Badge className="bg-gradient-to-tr from-slate-900 to-gray-600 font-bold">
+                                        {Number(car.price).toLocaleString('es-ES')} €
+                                    </Badge>
+                                    </div>
                                     <p className="text-sm text-slate-500">{description}</p>
                                 </div>
 
