@@ -33,10 +33,6 @@ export function ListLovedCars () {
                                     <p className="text-sm text-slate-500">{description}</p>
                                 </div>
 
-                                <div className="my-3 gap-x-4">
-                                    <p>{price}€</p>
-                                </div>
-
                                 <div className="grid grid-cols-2 gap-x-4">
                                     <p className="flex items-center">
                                         <Users className="h-4 w-4 mr-2" strokeWidth={1} />
