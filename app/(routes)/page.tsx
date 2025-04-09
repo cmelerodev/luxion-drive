@@ -21,7 +21,7 @@ export default async function Home() {
           <p className="text-sm text-gray-500">En Luxion Drive te ofrecemos una cuidada selección de vehículos de alta gama, revisados al detalle y listos para hacerte vivir la experiencia del lujo al volante. Exclusividad, confianza y pasión por los coches en cada entrega.</p>
         </Reveal>
         <Reveal position="right" className="flex justify-end">
-          <Image src="/porche-gt3-rs-v2.jpg" width={700} height={700} alt="porche-gt3-rs" priority/>
+          <Image src="/porche-gt3-rs.webp" width={700} height={700} alt="porche-gt3-rs" priority/>
         </Reveal>
         <Link href="#lastCars" className="absolute shadow-lg bottom-2 left-1/2 flex items-center justify-center p-3 rounded-full text-gray-800 backdrop-blur-xl bg-white supports-[backdrop-filter]:bg-white/70 animate-bounce">
             <span><ArrowDown /></span>

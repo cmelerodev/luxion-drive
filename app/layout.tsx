@@ -8,6 +8,7 @@ import {
   ClerkProvider,
 } from '@clerk/nextjs'
 import { NavbarDashboard } from "../components/NavbarDashboard";
+import { Footer } from "@/components/Footer";
 
 
 const outfit = Outfit({ subsets: ["latin"] });
@@ -29,6 +30,7 @@ export default function RootLayout({
         <NextTopLoader color="#000"/>
         <NavbarDashboard />
             {children}
+          <Footer />
         <Toaster />
       </body>
     </html>

@@ -25,15 +25,14 @@ export function ListCars(props: ListCarsProps) {
                         <CarouselItem key={car.id} className="md:basis-1/2 lg:basis-1/3">
                             <div className="relative p-1 bg-white rounded-lg shadow-md hover:shadow-lg">
                                         <div className="flex justify-center">
-                                        <Image src={car.photo} alt={car.model} width={250} height={600}
-                                         className="rounded-lg"/>
+                                            <Image src={car.photo} alt={car.model} width={250} height={600} className="rounded-lg"/>
                                          </div>
                             
                                          <div className="relative p-3">
                                             <div className="flex flex-row items-center justify-between mb-3 gap-x-4">
-                                                <p className="text-xl min-h-16 lg:min-h-fit">{car.model}</p>
+                                                <p className="text-xl">{car.model}</p>
                                                 <Badge className="bg-gradient-to-tr from-slate-900 to-gray-600 font-bold">
-                                                    {car.price} €
+                                                    {Number(car.price).toLocaleString('es-ES')} €
                                                 </Badge>
                                             </div>
                             

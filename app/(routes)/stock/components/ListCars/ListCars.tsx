@@ -1,3 +1,4 @@
+import { Section } from "@/components/Section";
 import { CardCard } from "./CardCar";
 import { ListCarsProps } from "./ListCars.type";
 
@@ -10,11 +11,14 @@ export function ListCars(props: ListCarsProps) {
 
     return (
     <>
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-6 my-4 lg:grid-cols-3 lg:my-12">
-            {cars.map((car) => (
-                <CardCard car={car} key={car.id}/>
-            ))}
-        </div>
+        <Section>
+            <div className="text-sm text-muted-foreground mb-6">Mostrando <strong>{cars.length}</strong> vehículos disponibles </div>
+            <div className="grid md:grid-cols-2 gap-6 my-4 lg:grid-cols-3">
+                {cars.map((car) => (
+                    <CardCard car={car} key={car.id}/>
+                ))}
+            </div>
+        </Section>
     </>
     )
 }

@@ -19,8 +19,8 @@ export function NavbarDashboard()  {
     const { isSignedIn } = useAuth()
 
     return (
-        <nav className="flex items-center justify-between w-full h-20 px-2 border-b gap-x-4 md:px-6 bg-background">
-            <Link href="/"><Image width={120} height={120} src="/logo-luxion-drive.png" alt="logo Luxion Drive"></Image></Link>
+        <nav className="sticky top-0 z-50 flex items-center justify-between w-full h-20 px-2 border-b gap-x-4 md:px-6 transition-all duration-300 bg-background/95 backdrop-blur-md shadow-md">
+            <Link href="/"><Image width={120} height={120} src="/luxion-drive-logo.webp" alt="logo Luxion Drive"></Image></Link>
             
             <SidebarRoutes />
         
@@ -33,7 +33,7 @@ export function NavbarDashboard()  {
                     </SheetContent>
                     </Sheet>
                 </div>
-                <Link href="/love-cars" className="hidden lg:block"><Heart className={`h-5 w-5 ${lovedItems.length > 0 && "fill-black"}`} strokeWidth={1}/></Link>
+                <Link href="/love-cars" className="hidden lg:block"><Heart className={`h-5 w-5 text-gray-500 ${lovedItems.length > 0 && "text-red-500 fill-red-500"}`} strokeWidth={1}/></Link>
                 <div className="hidden lg:flex items-center gap-4">
                     {isSignedIn ? (
                         <UserButton />

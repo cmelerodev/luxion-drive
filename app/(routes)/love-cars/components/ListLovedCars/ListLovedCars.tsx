@@ -12,7 +12,7 @@ export function ListLovedCars () {
                 <h2 className="">Lista de coches favoritos vacía</h2>
             </div>
         ): (
-            <div className="grid grid-cols-2 gap-6 my-4 lg:grid-cols-4">
+            <div className="grid md:grid-cols-2 gap-6 my-4 lg:grid-cols-3">
                 {lovedItems.map((car: Car) => {
                     const {model, photo, fuel_type, km, year, cv, plazas, price, id, description} = car
 

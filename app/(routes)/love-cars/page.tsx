@@ -1,9 +1,12 @@
+import { Section } from "@/components/Section";
 import { ListLovedCars } from "./components/ListLovedCars";
 
 export default function loveCarsPage() {
     return (
         <div>
-            <ListLovedCars />
+            <Section>
+                <ListLovedCars />
+            </Section>
         </div>
     )
 }

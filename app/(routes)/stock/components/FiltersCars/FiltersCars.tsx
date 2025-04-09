@@ -14,7 +14,7 @@ export function FiltersCars(props: FilterCarsProps) {
     )
 
     return (
-        <div className="w-full flex justify-center px-6 lg:px-12 lg:sticky top-0 z-50 supports-[backdrop-filter]:bg-white/90 backdrop-blur-xl border-b">
+        <div className="w-full flex justify-center px-6 lg:px-12 lg:sticky top-20 z-40 supports-[backdrop-filter]:bg-white/90 backdrop-blur-xl border-b">
             <div className="flex flex-wrap mt-5 mb-8 gap-x-4 gap-y-2 max-w-7xl">
                 <Select onValueChange={(value) => handleFilter("brand", value)} value={filters.brand}>
                     <SelectTrigger className="w-full md:w-[180px]">

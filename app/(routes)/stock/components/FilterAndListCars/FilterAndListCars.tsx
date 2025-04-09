@@ -92,9 +92,7 @@ export function FilterAndListCars(props: FilterAndListCarsProps) {
     return (
         <div>
             <FiltersCars setFilters={handleFilterChange} filters={filters} clearFilters={clearFilters}/>
-            <div className="container mx-auto px-6 md:px-12">
             <ListCars cars={filteredCars}/>
-            </div>
         </div>
     )
 }
