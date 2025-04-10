@@ -16,7 +16,7 @@ export function ButtonEditCar(props: ButtonEditCarProps) {
                     <Pencil className="w-4 h-4 ml-2" strokeWidth={1}/>
                 </Button>
             </DialogTrigger>
-            <DialogContent>
+            <DialogContent className="max-h-[80vh] overflow-y-auto">
                 <DialogHeader>
                     <DialogDescription>
                         <FormEditCar setOpenDialog={setOpenDialog} carData={carData} />

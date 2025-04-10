@@ -26,7 +26,7 @@ export function ButtonAddCar() {
                     <PlusCircle className="ml-2" />
                 </Button>
             </DialogTrigger>
-            <DialogContent>
+            <DialogContent className="max-h-[80vh] overflow-y-auto">
                 <DialogHeader>
                     <DialogTitle>Create new car</DialogTitle>
                     <DialogDescription>

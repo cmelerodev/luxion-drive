@@ -9,10 +9,12 @@ export default async function DashboardPage() {
     return (
         
         <div>
-            <div className="flex justify-between">
-                <h2>Manage your cars</h2>
-                <ButtonAddCar />
+            <div className="max-w-7xl mx-auto pt-12 lg:pt-24 px-6">
+                <div className="flex justify-end">
+                    <ButtonAddCar />
+                </div>
             </div>
+            
             <ListCars cars={car}/>
         </div>
     )

@@ -28,6 +28,7 @@ import { UploadButton } from "@/utils/uploadthing"
 import { useState } from "react"
 import { FormAddCarProps } from "./FormAddCar.types"
 import { useRouter } from "next/navigation"
+import { Textarea } from "@/components/ui/textarea"
 
 export function FormAddCar(props: FormAddCarProps) {
     const { setOpenDialog } = props;
@@ -208,19 +209,6 @@ export function FormAddCar(props: FormAddCarProps) {
                     />
                     <FormField
                         control={form.control}
-                        name="description"
-                        render={({ field }) => (
-                        <FormItem>
-                            <FormLabel>Description</FormLabel>
-                            <FormControl>
-                            <Input placeholder="Car description" {...field} />
-                            </FormControl>
-                            <FormMessage />
-                        </FormItem>
-                        )}
-                    />
-                    <FormField
-                        control={form.control}
                         name="color"
                         render={({ field }) => (
                         <FormItem>
@@ -280,11 +268,23 @@ export function FormAddCar(props: FormAddCarProps) {
                         </FormItem>
                         )}
                     />
-                    
-                    
-
                 </div>
-            <Button className="w-full mt-5" type="submit" disabled={!isValid}>Create car</Button>
+
+                <FormField
+                    control={form.control}
+                    name="description"
+                    render={({ field }) => (
+                    <FormItem>
+                        <FormLabel>Description</FormLabel>
+                        <FormControl>
+                        <Textarea placeholder="Car description" {...field}/>
+                        </FormControl>
+                        <FormMessage />
+                    </FormItem>
+                    )}
+                />
+                
+                <Button className="w-full mt-5" type="submit" disabled={!isValid}>Create car</Button>
             </form>
         </Form>
     )

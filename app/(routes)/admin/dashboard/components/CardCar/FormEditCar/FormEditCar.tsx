@@ -28,6 +28,7 @@ import { UploadButton } from "@/utils/uploadthing"
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 import { FormEditCarProps } from "./FormEditCar.types";
+import { Textarea } from "@/components/ui/textarea"
 
 
 
@@ -208,19 +209,6 @@ export function FormEditCar(props: FormEditCarProps) {
                         </FormItem>
                         )}
                     />
-                    <FormField
-                        control={form.control}
-                        name="description"
-                        render={({ field }) => (
-                        <FormItem>
-                            <FormLabel>Description</FormLabel>
-                            <FormControl>
-                            <Input placeholder="Car description" {...field} />
-                            </FormControl>
-                            <FormMessage />
-                        </FormItem>
-                        )}
-                    />
                     
                     <FormField
                         control={form.control}
@@ -282,12 +270,24 @@ export function FormEditCar(props: FormEditCarProps) {
                             <FormMessage />
                         </FormItem>
                         )}
-                    />
-                    
-                    
-
+                    />  
                 </div>
-            <Button className="w-full mt-5" type="submit" disabled={!isValid}>Edit car</Button>
+
+                <FormField
+                    control={form.control}
+                    name="description"
+                    render={({ field }) => (
+                    <FormItem>
+                        <FormLabel>Description</FormLabel>
+                        <FormControl>
+                        <Textarea placeholder="Car description" {...field}/>
+                        </FormControl>
+                        <FormMessage />
+                    </FormItem>
+                    )}
+                />
+
+                <Button className="w-full mt-5" type="submit" disabled={!isValid}>Edit car</Button>
             </form>
         </Form>
     )

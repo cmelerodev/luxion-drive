@@ -9,6 +9,7 @@ import { useRouter } from "next/navigation";
 import { CardCarProps } from "./CardCar.type";
 import { ButtonEditCar } from "./ButtonEditCar";
 import axios from "axios";
+import { Badge } from "@/components/ui/badge";
 
 export function CardCard(props: CardCarProps) {
     const { car } = props;
@@ -28,17 +29,18 @@ export function CardCard(props: CardCarProps) {
 
     return (
         <div className="relative p-1 bg-white rounded-lg shadow-md hover:shadow-lg">
+            <a  href={`/car-info/${car.id}`}>
             <Image src={car.photo} alt={car.model} width={400} height={600}
              className="rounded-lg"/>
 
              <div className="relative p-3">
                 <div className="flex flex-col mb-3 gap-x-4">
-                    <p className="text-xl min-h-16 lg:min-h-fit">{car.model}</p>
-                    <p className="text-sm text-slate-500">{car.description}</p>
-                </div>
-
-                <div className="my-3 gap-x-4">
-                    <p>{car.price}€</p>
+                    <div className="flex justify-between items-center">
+                        <p className="text-xl min-h-16 lg:min-h-fit">{car.model}</p>
+                        <Badge className="bg-gradient-to-tr from-slate-900 to-gray-600 font-bold">
+                            {Number(car.price).toLocaleString('es-ES')} €
+                        </Badge>
+                    </div>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-x-4">
@@ -63,16 +65,16 @@ export function CardCard(props: CardCarProps) {
                         <span>{car.km} km</span>
                     </p>
                 </div>
-
-                <div className="flex flex-col md:flex-row justify-between mt-3 gap-y-2 gap-x-4">
-                    <Button variant="outline" onClick={deletedCard}>
-                        Delete
-                        <Trash className="w-4 h-4 ml-2" />
-                    </Button>
-
-                    <ButtonEditCar carData={car}/>
-                </div>
              </div>
+             </a>
+             <div className="flex flex-col md:flex-row justify-between mt-3 gap-y-2 gap-x-4 p-3">
+                <Button variant="outline" onClick={deletedCard}>
+                    Delete
+                    <Trash className="w-4 h-4 ml-2" />
+                </Button>
+
+                <ButtonEditCar carData={car}/>
+            </div>
         </div>
     )
 }
