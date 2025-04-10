@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚗 Luxion Drive
 
-## Getting Started
+**Luxion Drive** es una plataforma web moderna de compraventa y gestión de vehículos premium. Esta aplicación proporciona un catálogo interactivo, sistema de filtrado avanzado, formulario de contacto, panel de administración y un diseño totalmente responsive. 
 
-First, run the development server:
+Deploy 👉 [https://luxion-drive.vercel.app](https://luxion-drive.vercel.app)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🧱 Stack Tecnológico
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### ⚙️ Frontend
+- **Next.js 15**
+- **React 19**
+- **Tailwind CSS 4**
+- **Framer Motion** (animaciones)
+- **Lucide Icons** (iconografía)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🧩 Backend
+- **Prisma ORM** con soporte a PostgreSQL/MySQL
+- **Clerk** (autenticación moderna)
+- **Zod** y **React Hook Form** (validación y formularios)
+- **Axios** (consumo de APIs)
 
-## Learn More
+### 📦 Otras herramientas clave
+- **UploadThing** (gestión de archivos / imágenes)
+- **Sonner** (notificaciones y toasts)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Funcionalidades
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- ✅ Catálogo de vehículos dinámico con imágenes y datos
+- ✅ Filtros avanzados por marca, modelo, año, precio, etc.
+- ✅ Página de detalle individual para cada coche
+- ✅ Carrusel de imágenes (Embla)
+- ✅ Panel de administración protegido (Clerk)
+- ✅ Subida de imágenes con UploadThing
+- ✅ Formularios validados con React Hook Form + Zod
+- ✅ Interfaz moderna y responsive
+- ✅ Animaciones suaves con Framer Motion
+- ✅ Soporte para modo claro/oscuro
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🖥️ Panel de Administración
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+El panel de administración de **Luxion Drive** está protegido mediante **Clerk** e implementa autenticación segura para garantizar el acceso solo a usuarios autorizados. Desde este panel se puede:
+
+- 🔧 **Gestionar vehículos**: añadir nuevos coches, editar datos existentes o eliminar del catálogo.
+- 📥 **Ver mensajes recibidos**: acceso a todos los formularios de contacto enviados por los usuarios.
+- 📊 **Administrar el inventario completo**: control general sobre los datos de los coches publicados en la plataforma.
+
+Este panel es accesible únicamente para usuarios autenticados y cuenta con una interfaz simple, intuitiva y adaptada tanto a escritorio como a dispositivos móviles.
+
+---
+
+## 👤 Autor
+
+Desarrollado con ❤️ por **cmelero.dev**
+
+- GitHub: [https://github.com/cmelerodev](https://github.com/cmelerodev)
+- Email: [cmelero.dev@email.com](mailto:cmelero.dev@email.com)
+- Portfolio: [https://cmelero-dev-portfolio.vercel.app/](https://cmelero-dev-portfolio.vercel.app/)
+
+¡Gracias por visitar este repositorio! Si tienes sugerencias, dudas o simplemente quieres saludar, no dudes en escribirme.
+
