@@ -44,7 +44,7 @@ export default async function Home() {
 
       <Section>
         <div className="bg-gradient-to-tr from-slate-900 to-gray-600 p-6 lg:py-32 lg:px-18 rounded-xl relative">
-          <div className="flex flex-col gap-y-12 lg:flex-row gap-x-6">
+          <div className="flex flex-col gap-y-12 xl:flex-row gap-x-6">
             <div>
               <h3 className="text-4xl text-white">Compra el coche de tus sueños hoy</h3>
               <p className="text-white text-xl my-5">Explora el mundo de los coches premium</p>
@@ -54,7 +54,7 @@ export default async function Home() {
                 </Button>
               </a>
             </div>
-            <Reveal className="relative lg:absolute lg:-right-24 lg:top-1/2 lg:transform lg:-translate-y-1/2" position="bottom">
+            <Reveal className="relative xl:absolute xl:-right-24 xl:top-1/2 xl:transform xl:-translate-y-1/2" position="bottom">
               <Image src="/lamborghini-urus.webp" alt="Car drive" width={550} height={250}/>
             </Reveal>
           </div>

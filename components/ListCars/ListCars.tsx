@@ -18,7 +18,7 @@ export function ListCars(props: ListCarsProps) {
     const { cars } = props
 
     return (
-        <div className="flex flex-col items-center gap-y-8">
+        <div className="flex flex-col items-center lg:gap-y-8">
             <Carousel opts={{ align: "start", loop: true, }} className="w-full">
                 <CarouselContent className="py-4">
                     {cars.map((car) => (
@@ -26,10 +26,10 @@ export function ListCars(props: ListCarsProps) {
                             <div className="relative p-1 bg-white rounded-lg shadow-md hover:shadow-lg">
                                 <a  href={`/car-info/${car.id}`}>
                                     <div className="flex justify-center">
-                                        <Image src={car.photo} alt={car.model} width={250} height={600} className="rounded-lg"/>
-                                        </div>
+                                        <Image src={car.photo} alt={car.model} width={250} height={250} className="rounded-lg"/>
+                                    </div>
                         
-                                        <div className="relative p-3">
+                                    <div className="relative p-3">
                                         <div className="flex flex-row items-center justify-between mb-3 gap-x-4">
                                             <p className="text-xl">{car.model}</p>
                                             <Badge className="bg-gradient-to-tr from-slate-900 to-gray-600 font-bold">
@@ -37,7 +37,7 @@ export function ListCars(props: ListCarsProps) {
                                             </Badge>
                                         </div>
                         
-                                        <div className="grid md:grid-cols-2 gap-x-4">
+                                        <div className="grid grid-cols-2 gap-x-4">
                                             <p className="flex items-center">
                                                 <Users className="h-4 w-4 mr-2" strokeWidth={1} />
                                                 {car.plazas}
@@ -66,8 +66,8 @@ export function ListCars(props: ListCarsProps) {
                         
                     ))}
                 </CarouselContent>
-                <CarouselPrevious className="hidden lg:flex"/>
-                <CarouselNext className="hidden lg:flex"/>
+                <CarouselPrevious className="hidden xl:flex"/>
+                <CarouselNext className="hidden xl:flex"/>
             </Carousel>
 
             <Link href="/stock">

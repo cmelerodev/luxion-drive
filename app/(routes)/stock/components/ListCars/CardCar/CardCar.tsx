@@ -16,7 +16,7 @@ export function CardCard(props: CardCarProps) {
         <div className="relative p-1 bg-white rounded-lg shadow-md hover:shadow-lg">
             <a href={`/car-info/${car.id}`} >
                 <div className="flex justify-center">
-                    <Image src={car.photo} alt={car.model} width={250} height={600} className="rounded-lg"/>
+                    <Image src={car.photo} alt={car.model} width={250} height={250} className="rounded-lg"/>
                 </div>
 
                 <div className="relative p-3">

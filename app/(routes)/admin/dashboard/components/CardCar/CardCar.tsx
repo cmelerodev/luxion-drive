@@ -30,8 +30,9 @@ export function CardCard(props: CardCarProps) {
     return (
         <div className="relative p-1 bg-white rounded-lg shadow-md hover:shadow-lg">
             <a  href={`/car-info/${car.id}`}>
-            <Image src={car.photo} alt={car.model} width={400} height={600}
-             className="rounded-lg"/>
+            <div className="flex justify-center">
+                <Image src={car.photo} alt={car.model} width={250} height={250} className="rounded-lg"/>
+            </div>
 
              <div className="relative p-3">
                 <div className="flex flex-col mb-3 gap-x-4">
@@ -43,7 +44,7 @@ export function CardCard(props: CardCarProps) {
                     </div>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-x-4">
+                <div className="grid grid-cols-2 gap-x-4">
                     <p className="flex items-center">
                         <Users className="h-4 w-4 mr-2" strokeWidth={1} />
                         {car.plazas}
